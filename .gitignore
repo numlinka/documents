@@ -1,0 +1,12 @@
+# VS Code
+*.code-workspace
+
+# JetBrains
+/.idea
+
+# NodeJs
+/node_modules
+
+# VitePress
+/.vitepress/cache
+/.vitepress/dist
