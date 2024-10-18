@@ -1,43 +1,39 @@
-# 原子计数器
+# typex - 原子计数器
 
 提供线程安全的计数功能，适用于并发编程，确保计数操作的原子性。
 
+_于 `typex.basic` 中定义，可在 `typex` 中直接访问。_
 
-## `typex.Atomic`
+
+## `Atomic`
 
 原子计数器，每次访问时值都会递增。
 
-`class Atomic (max_value: int = -1)`
+- `class Atomic (max_value: int = -1)`\
+  创建一个原子计数器实例。\
+  `max_value (int)` 计数器的最大值，超过这个值将从头计数，默认为 -1，表示不限制。
 
-> 获取一个原子计数器实例  
-> max_value (int): 计数器的最大值，超过这个值将从头计数，默认为 -1，表示不限制。
+- `._set_max_value(max_value: int) -> None`\
+  `max_value (int)` 计数器的最大值，超过这个值将从头计数，-1 表示不限制。最大值推荐在声明时就设置好，不推荐在运行时动态设置。
 
-`._set_max_value(max_value: int) -> None`
+- `.get_count() -> int`\
+  获取当前计数值。
 
-> max_value (int): 计数器的最大值，超过这个值将从头计数，-1 表示不限制。\
-> 最大值推荐在声明时就设置好，不推荐在运行时动态设置。
+- `.count -> int`\
+  只读属性；获取当前计数值，方便的是，你不需要写括号。
 
-`.get_count() -> int`
-
-> 获取当前计数值。
-
-`.count -> int`
-
-> 只读属性；获取当前计数值，方便的是，你不需要写括号。
-
-`.value -> int`
-
-> 同 `.count` 。
+- `.value -> int`\
+  同 `.count` 。
 
 
-## `typex.AbsoluteAtomic`
+## `AbsoluteAtomic`
 
-> 绝对原子计数器，继承 `Singleton` 和 `Atomic`，同时拥有两者的特性。这意味着所有使用该类的实例将共享一个计数器。
+绝对原子计数器，继承 `Singleton` 和 `Atomic`，同时拥有两者的特性。这意味着所有使用该类的实例将共享一个计数器。
 
 
-## `typex.MultitonAtomic`
+## `MultitonAtomic`
 
-> 多例原子计数器，继承 `Multiton` 和 `Atomic`，同时拥有两者的特性。这意味着你可以创建不同的实例，且每个实例的计数器都是独立的。
+多例原子计数器，继承 `Multiton` 和 `Atomic`，同时拥有两者的特性。这意味着你可以创建不同的实例，且每个实例的计数器都是独立的。
 
 
 ## 使用示例

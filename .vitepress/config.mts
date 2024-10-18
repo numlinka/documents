@@ -29,10 +29,12 @@ export default defineConfig({
               text: "pytypex",
               items: [
                 { text: "介绍", link: "/pytypex/" },
+                { text: "常量", link: "/pytypex/constants" },
                 { text: "静态类", link: "/pytypex/static" },
                 { text: "单例类", link: "/pytypex/singleton" },
                 { text: "多例类", link: "/pytypex/multiton" },
-                { text: "原子计数器", link: "/pytypex/atomic" }
+                { text: "原子计数器", link: "/pytypex/atomic" },
+                { text: "目录构建器", link: "/pytypex/dirstruct" }
               ]
             }
           ]
