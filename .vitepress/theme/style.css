@@ -160,3 +160,36 @@ a {
 .vp-doc weaken {
   color: #9F9F9CED;
 }
+
+
+.content h2 {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 10px;
+}
+
+.content h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 24px;
+  bottom: 0;
+  width: 8px;
+  background-color: #007acc;
+}
+
+.content h3 {
+  position: relative;
+  padding-left: 12px;
+  margin-bottom: 10px;
+}
+
+.content h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #007acc;
+}

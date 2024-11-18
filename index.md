@@ -10,8 +10,9 @@ features:
   - title: pytypex
     details: Python 基础类型扩展模块。
     link: /pytypex/
-  - title: 
-    details: 
+  - title: pylogop
+    details: Python 一个简单易用的、可扩展的日志方案。
+    link: /pylogop/
   - title: 
     details: 
 ---

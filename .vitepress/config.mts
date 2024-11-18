@@ -28,13 +28,31 @@ export default defineConfig({
             {
               text: "pytypex",
               items: [
-                { text: "介绍", link: "/pytypex/" },
+                { text: "介绍", link: "/pytypex/index" },
                 { text: "常量", link: "/pytypex/constants" },
                 { text: "静态类", link: "/pytypex/static" },
                 { text: "单例类", link: "/pytypex/singleton" },
                 { text: "多例类", link: "/pytypex/multiton" },
                 { text: "原子计数器", link: "/pytypex/atomic" },
                 { text: "目录构建器", link: "/pytypex/dirstruct" }
+              ]
+            }
+          ],
+
+          "/pylogop/": [
+            {
+              text: "pylogop",
+              items: [
+                { text: "介绍", link: "/pylogop/index" },
+                { text: "常量", link: "/pylogop/constants" },
+                { text: "异常", link: "/pylogop/exceptions" },
+                { text: "数据类型", link: "/pylogop/typeins" },
+                { text: "日志等级", link: "/pylogop/level" },
+                { text: "抽象类型", link: "/pylogop/base" },
+                { text: "日志记录器", link: "/pylogop/logging" },
+                { text: "输出流", link: "/pylogop/stream" },
+                { text: "实用工具", link: "/pylogop/utils" },
+                { text: "易用设计", link: "/pylogop/ease" }
               ]
             }
           ]
