@@ -125,10 +125,15 @@ class CWD (Directory):
     cache = "cache"
     dist = "dist"
 
+current_working_directory = os.getcwd()
 
-CWD._include_ = True
-abscwd = CWD(os.getcwd())
+cwd = CWD(current_working_directory)
+cwd._include_ = False
 
-CWD._include_ = False
-relcwd = CWD(os.getcwd())
+abscwd = CWD(current_working_directory)
+abscwd._include_ = True
 ```
+
+::: warning 注意
+`._include_` 属性仅推荐修改根 `Directory` 的属性，它决定了在计算子属性的路径时是否会用自身的值进行目录拼接；且不推荐在中途变更 `._include_` 的值，当一个 `...Path` 类型的属性被计算后，它会变成 `Final...Path` 类型，此时修改 `._include_` 属性将不会生效。
+:::
