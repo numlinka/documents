@@ -74,7 +74,7 @@ INFO
 - `CRITICAL_ALIAS` `(str)`
 - `FATAL_ALIAS` `(str)`
 
-### 日志内容键
+### 日志内容键 {#log-content-key}
 
 | 常量名 | 类型 | 描述 |
 | :--- | :--- | :--- |
@@ -122,7 +122,7 @@ INFO
 - `CHAR_LF` `(str)`\
   换行符
 
-### 日志格式
+### 日志格式 {#log-format}
 
 - `FORMAT_DEFAULT` `(str)`
 - `FORMAT_SIMPLE` `(str)`

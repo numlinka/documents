@@ -29,7 +29,6 @@ _于 `logop.typeins` 中定义，在 `logop` 中使用 `typeins` 访问，未包
 
 记录日志详细信息；
 
-- `.message -> str` 日志消息
 - `.mark -> str` 标记
 - `.level -> int` 日志等级
 - `.level_name -> str` 日志等级名称
@@ -54,9 +53,10 @@ _于 `logop.typeins` 中定义，在 `logop` 中使用 `typeins` 访问，未包
 
 日志单元；包含一个日志的所有信息。
 
-- `.details -> LogDetails`
-- `.args -> Tuple[AnyStr]` 
-- `.kwargs -> Dict[str, AnyStr]`
+- `.details -> LogDetails` 日志详细信息
+- `.message -> str` 日志消息
+- `.args -> Tuple[AnyStr]` 提供给日志消息的格式化参数
+- `.kwargs -> Dict[str, AnyStr]` 提供给日志消息的格式化参数
 
 
 ## `TrackStateUnit`

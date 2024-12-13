@@ -52,7 +52,8 @@ export default defineConfig({
                 { text: "日志记录器", link: "/pylogop/logging" },
                 { text: "输出流", link: "/pylogop/stream" },
                 { text: "实用工具", link: "/pylogop/utils" },
-                { text: "易用设计", link: "/pylogop/ease" }
+                { text: "易用设计", link: "/pylogop/ease" },
+                { text: "个性化", link: "/pylogop/custom" }
               ]
             }
           ]
