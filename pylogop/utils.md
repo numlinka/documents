@@ -78,27 +78,6 @@ _于 `logop.utils` 中定义，在 `logop` 中使用 `utils` 访问，未包含�
 
 ---
 
-### (function) `format_log_message_secure`
-```Python
-(function) def format_log_message_secure(
-    log_format: str,
-    log_unit: LogUnit
-) -> str
-```
-
-使用指定的格式字符串和日志单位初始化日志消息。
-然而，与标准格式函数相比，它保证会有输出，但会丢失一些细节。
-仅在标准格式处理报告错误时才建议使用。
-
-#### 参数
-- `log_format` `(str)` 日志格式字符串。
-- `log_unit` `(LogUnit)` 日志单元。
-
-#### 返回
-- `message` `(str)` 格式化后的日志消息。
-
----
-
 ### (function) `format_log_message`
 ```Python
 (function) def format_log_message_secure(

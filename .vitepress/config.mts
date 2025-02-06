@@ -44,6 +44,7 @@ export default defineConfig({
               text: "pylogop",
               items: [
                 { text: "介绍", link: "/pylogop/index" },
+                { text: "演示", link: "/pylogop/demo" },
                 { text: "常量", link: "/pylogop/constants" },
                 { text: "异常", link: "/pylogop/exceptions" },
                 { text: "数据类型", link: "/pylogop/typeins" },
@@ -55,7 +56,8 @@ export default defineConfig({
                 { text: "易用设计", link: "/pylogop/ease" },
                 { text: "个性化", link: "/pylogop/custom" }
               ]
-            }
+            },
+            { text: "开源协议", link: "/pylogop/license" }
           ]
         },
 
