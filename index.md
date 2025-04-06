@@ -13,7 +13,8 @@ features:
   - title: pylogop
     details: Python 一个简单易用的、可扩展的日志方案。
     link: /pylogop/
-  - title: 
-    details: 
+  - title: pyi18nco
+    details: Python 一个简单易用的、可扩展的 i18n 方案。
+    link: /pyi18nco/
 ---
 

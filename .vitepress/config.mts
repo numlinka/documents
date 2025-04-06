@@ -58,6 +58,17 @@ export default defineConfig({
               ]
             },
             { text: "开源协议", link: "/pylogop/license" }
+          ],
+
+          "/pyi18nco/": [
+            {
+              text: "pyi18nco",
+              items: [
+                { text: "介绍", link: "/pyi18nco/index" },
+                { text: "常量", link: "/pyi18nco/constants" },
+                { text: "国际化", link: "/pyi18nco/i18n" }
+              ]
+            }
           ]
         },
 
